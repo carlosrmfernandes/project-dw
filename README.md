@@ -33,27 +33,25 @@ Clonar o projecto
 ## Cadastro de user
 
 ```php
-curl --location 'https://go-wash-api.onrender.com/api/user' \
+curl --location 'https://api-go-wash-efc9c9582687.herokuapp.com/api/user' \
 --header 'Content-Type: application/json' \
---header 'Cookie: gowash_session=AAng0FaavLO3Q0whBGNR2094jvRiWPOrvk9unvRH' \
+--header 'Authorization: Bearer null' \
+--header 'Cookie: gowash_session=9UR4Zn49iaVIoqRanCp1hob3By2lToxAV0nRCsS6' \
 --data-raw '{
-    "name":"Eduardo",
-    "email":"eduardo@gmail.com",
+    "name":"Carlos",
+    "email":"carlosr.m.fernandes@gmail.com",
     "user_type_id":1,
     "password": "123456",
     "cpf_cnpj": "62418247406",
     "terms": 1,
-    "birthday":"2000-10-12"
+    "birthday":"2000-10-12"    
 }'
-```
-
-
 ## Login de user
 
 ```php
-curl --location 'https://go-wash-api.onrender.com/api/login' \
+curl --location 'https://api-go-wash-efc9c9582687.herokuapp.com/api/login' \
 --header 'Content-Type: application/json' \
---header 'Cookie: gowash_session=AAng0FaavLO3Q0whBGNR2094jvRiWPOrvk9unvRH' \
+--header 'Cookie: gowash_session=9UR4Zn49iaVIoqRanCp1hob3By2lToxAV0nRCsS6' \
 --data-raw '{
 "email": "carlos.fernandes@faculdadeimpacta.com.br",
 "password":"123456",
