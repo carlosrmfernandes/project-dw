@@ -30,5 +30,34 @@ javascript
 Clonar o projecto
 ```
 
+## Cadastro de user
 
+```php
+curl --location 'https://go-wash-api.onrender.com/api/user' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: gowash_session=AAng0FaavLO3Q0whBGNR2094jvRiWPOrvk9unvRH' \
+--data-raw '{
+    "name":"Eduardo",
+    "email":"eduardo@gmail.com",
+    "user_type_id":1,
+    "password": "123456",
+    "cpf_cnpj": "62418247406",
+    "terms": 1,
+    "birthday":"2000-10-12"
+}'
+```
+
+
+## Login de user
+
+```php
+curl --location 'https://go-wash-api.onrender.com/api/login' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: gowash_session=AAng0FaavLO3Q0whBGNR2094jvRiWPOrvk9unvRH' \
+--data-raw '{
+"email": "carlos.fernandes@faculdadeimpacta.com.br",
+"password":"123456",
+"user_type_id": 1
+}'
+```
 
