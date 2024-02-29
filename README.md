@@ -46,6 +46,7 @@ curl --location 'https://api-go-wash-efc9c9582687.herokuapp.com/api/user' \
     "terms": 1,
     "birthday":"2000-10-12"    
 }'
+``` 
 ## Login de user
 
 ```php
@@ -57,5 +58,46 @@ curl --location 'https://api-go-wash-efc9c9582687.herokuapp.com/api/login' \
 "password":"123456",
 "user_type_id": 1
 }'
+```
+
+## Bucar os dados do user
+
+```php
+curl --location 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/user/2' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzA5MjMyNjEzLCJuYmYiOjE3MDkyMzI2MTMsImp0aSI6ImxDaW1QMlp0ajdRZDZpQmEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.-kr1dP72RTYeM5oMG-G30PE3S3rXAUEdBsQ01bj-sBE' \
+--header 'Cookie: gowash_session=EY3jeoRM91jkP3mxyEqJB3C3gjMCJEJdDH5NzKwA'
+```
+
+## Cadastro de Endereço
+
+```php
+curl --location 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzA5MjMyNjEzLCJuYmYiOjE3MDkyMzI2MTMsImp0aSI6ImxDaW1QMlp0ajdRZDZpQmEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.-kr1dP72RTYeM5oMG-G30PE3S3rXAUEdBsQ01bj-sBE' \
+--header 'Cookie: gowash_session=EY3jeoRM91jkP3mxyEqJB3C3gjMCJEJdDH5NzKwA' \
+--data '{
+    "title":"Minha Casa",
+    "cep": "03730000",
+    "address": "Rua Brazópolis Jardim Jaú (Zona Leste)",
+    "number": "8A",
+    "complement": ""
+}'
+```
+
+## Buscar todos endereço do user
+
+```php
+curl --location 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzA5MjMyNjEzLCJuYmYiOjE3MDkyMzI2MTMsImp0aSI6ImxDaW1QMlp0ajdRZDZpQmEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.-kr1dP72RTYeM5oMG-G30PE3S3rXAUEdBsQ01bj-sBE' \
+--header 'Cookie: gowash_session=EY3jeoRM91jkP3mxyEqJB3C3gjMCJEJdDH5NzKwA' \
+--data ''
+```
+
+## Deletar um endereço do usuario
+
+```php
+curl --location --request DELETE 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address/3' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzA5MjMyNjEzLCJuYmYiOjE3MDkyMzI2MTMsImp0aSI6ImxDaW1QMlp0ajdRZDZpQmEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.-kr1dP72RTYeM5oMG-G30PE3S3rXAUEdBsQ01bj-sBE' \
+--header 'Cookie: gowash_session=EY3jeoRM91jkP3mxyEqJB3C3gjMCJEJdDH5NzKwA'
 ```
 
