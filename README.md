@@ -39,7 +39,7 @@ curl --location 'https://api-go-wash-efc9c9582687.herokuapp.com/api/user' \
 --header 'Cookie: gowash_session=9UR4Zn49iaVIoqRanCp1hob3By2lToxAV0nRCsS6' \
 --data-raw '{
     "name":"Carlos",
-    "email":"carlosr.m.fernandes@gmail.com",
+    "email":"carlos@gmail.com",
     "user_type_id":1,
     "password": "123456",
     "cpf_cnpj": "62418247406",
