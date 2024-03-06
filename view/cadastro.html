@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">Logo</a>
+        <ul class="menu">
+            <li>
+                <a href="./view/cadastro.html">Cadastro</a>
+            </li>
+            <li>
+                <a href="./view/login.html">Login</a>
+            </li>
+        </ul>
+    </header>
+    <section class="form">
+        <h1 style="text-align: center;">Faça o seu cadastro</h1>
+        <form>
+            <label>Nome Completo</label>
+            <input type="text" name="name">
+
+            <label>CPF/CNPJ</label>
+            <input type="text" name="cpf_cnpj">
+
+            <label>Tipo de Usuario</label>
+            <select>
+                <option value="1">Aluno</option>
+                <option value="2">Professor</option>
+            </select>
+            <input type="button" value="Cadastro"> 
+        </form>
+    </section>
+</body>
+</html>
