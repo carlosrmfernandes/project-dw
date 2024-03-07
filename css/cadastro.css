@@ -1,0 +1,37 @@
+body{
+    background-color: white;
+    color: black;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 0 auto;
+    max-width: 500px;        
+    grid-gap: 20px;  
+        
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+  
+input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+
+  
