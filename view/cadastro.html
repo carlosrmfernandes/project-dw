@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title>
+        <script src="../script/cadastro.js"></script>    
+        <link rel="stylesheet" type="text/css" href="../css/index.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/cadastro.css" media="screen" />        
+    </head>
+    <body>
+        <header>
+            <a href="../index.html">Logo</a>
+            <ul>
+                <li><a href="">Cadastro</li></a> 
+                <li>Login</li>
+            </ul>
+        </header>
+        <section class="form">
+            <h1 style="text-align: center;">Faça o seu cadastro</h1>
+            <div>
+                <form>
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" name="name" placeholder="Nome completo..">
+
+                    <label for="lname">CPF / CNPJ</label>
+                    <input type="text" id="cpf_cnpj" name="cpf_cnpj" placeholder="Cpf ou Cnpj">
+
+                    <label for="lname">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+
+                   
+                    <input type="button" value="Submit" onclick="cadastroUsuario()">
+            </div>
+
+        </section>
+
+    </body>
+</html>
