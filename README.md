@@ -36,7 +36,6 @@ Clonar o projecto
 ```
 curl --location 'https://go-wash-api.onrender.com/api/user' \
 --header 'Content-Type: application/json' \
---header 'Cookie: gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj' \
 --data-raw '{
     "name":"xxxxxxxxxxx",
     "email":"xxxxxxxxx@gmail.com",
@@ -54,7 +53,6 @@ curl --location 'https://go-wash-api.onrender.com/api/user' \
 ```
 curl --location 'https://go-wash-api.onrender.com/api/login' \
 --header 'Content-Type: application/json' \
---header 'Cookie: gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj' \
 --data-raw '{
 "email": "xxxxxx@gmail.com",
 "password":"123456",
@@ -110,7 +108,6 @@ curl --location 'https://go-wash-api.onrender.com/api/login' \
 ```
 curl --location 'https://go-wash-api.onrender.com/api/auth/address' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzEwNDE3MjIyLCJuYmYiOjE3MTA0MTcyMjIsImp0aSI6InBsZll0aENEZ0U1NUNzMHEiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.z1pdEBkx8Hq01B7jNKa42NGxtFFHwb-7O_0y8krVWUY' \
---header 'Cookie: gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj' \
 --data ''
 ```
 
@@ -120,7 +117,6 @@ curl --location 'https://go-wash-api.onrender.com/api/auth/address' \
 curl --location 'https://go-wash-api.onrender.com/api/auth/address' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzEwNDE3MjIyLCJuYmYiOjE3MTA0MTcyMjIsImp0aSI6InBsZll0aENEZ0U1NUNzMHEiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.z1pdEBkx8Hq01B7jNKa42NGxtFFHwb-7O_0y8krVWUY' \
---header 'Cookie: gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj' \
 --data '{
     "title":"Minha Casa",
     "cep": "03730000",
@@ -136,7 +132,6 @@ curl --location 'https://go-wash-api.onrender.com/api/auth/address' \
 curl --location 'https://go-wash-api.onrender.com/api/auth/address/4' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzEwNDE3MjIyLCJuYmYiOjE3MTA0MTcyMjIsImp0aSI6InBsZll0aENEZ0U1NUNzMHEiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.z1pdEBkx8Hq01B7jNKa42NGxtFFHwb-7O_0y8krVWUY' \
---header 'Cookie: gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj' \
 --data '{
     "title":"Minha Casa ola",
     "cep": "03730000",
