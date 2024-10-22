@@ -136,6 +136,8 @@ curl --location 'https://go-wash-api.onrender.com/api/auth/address' \
 
 ## Atualizar endereço
 
+METHOD: POST
+
 ```
 curl --location 'https://go-wash-api.onrender.com/api/auth/address/4' \
 --header 'Content-Type: application/json' \
