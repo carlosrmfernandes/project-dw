@@ -161,7 +161,7 @@ curl --location --request DELETE 'https://go-wash-api.onrender.com/api/auth/addr
 
 ## Logout
 
-P
+POST
 ```
 curl --location 'https://go-wash-api.onrender.com/api/auth/logout' \
 --header 'Content-Type: application/json' \
